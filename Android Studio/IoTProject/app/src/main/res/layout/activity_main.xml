@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+        <!-- <ImageView
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="10"
+             android:src="@drawable/logo">
+
+         </ImageView> -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:text="IOT DEMO"
+            android:textColor="#ffffff"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="vertical"
+        android:background="@drawable/background2"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_marginBottom="0dp"
+
+                android:layout_weight="10"
+                android:src="@drawable/temp_1">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+
+                android:src="@drawable/hum_2">
+
+            </ImageView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="#ffffff"
+
+                android:id="@+id/txtTemperature"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="28°C"
+                android:textSize="55dp">
+
+            </TextView>
+
+            <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/txtHumidity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="30%"
+                android:textSize="54dp"
+                android:gravity="center"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="#ffffff"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Nhiệt độ"
+                android:textSize="25dp">
+
+            </TextView>
+
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="Độ ẩm"
+                android:textSize="25dp"
+                android:gravity="center"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal"
+        android:background="@drawable/background2"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:text="Đèn"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:gravity="center"
+            >
+        </TextView>
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnLED"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="39dp"
+            app:on="true"
+            app:textOff="TẮT"
+            app:textOn="BẬT"
+
+            app:colorBorder="#59469d"
+            app:colorOff="#FFFFFF"
+            app:colorOn="#59469d"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal"
+        android:background="@drawable/background2"
+        android:layout_margin="10dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:text="Máy bơm"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            >
+       </TextView>
+        <com.github.angads25.toggle.widget.LabeledSwitch
+              android:id="@+id/btnPUMP"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="70"
+              android:layout_marginLeft="40dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginBottom="10dp"
+              android:textSize="39dp"
+              app:on="true"
+              app:textOff="TẮT"
+              app:textOn="BẬT"
+
+              app:colorBorder="#59469d"
+              app:colorOff="#FFFFFF"
+              app:colorOn="#59469d" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:background="@drawable/background2"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/txtAI"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:text="Nhận diện AI:"
+            android:textColor="#ffffff"
+            android:textSize="28dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+
+            android:gravity="center"
+            android:text="Đeo khẩu trang"
+            android:textColor="#ffffff"
+            android:textSize="32dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </LinearLayout>
+
+
+</LinearLayout>
